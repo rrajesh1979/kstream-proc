@@ -26,6 +26,7 @@ public class StreamsStarterApp {
         config.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
         config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
+        config.put(StreamsConfig.STATE_DIR_CONFIG, "/tmp/kafka-streams/2");
 
         //1 - Create a Stream from Kafka
         StreamsBuilder builder = new StreamsBuilder();
