@@ -14,12 +14,31 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>avro-repo</id>-->
+<!--            <name>Avro Repository</name>-->
+<!--            <url>https://repo1.maven.org/maven2/</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>confluent</id>-->
+<!--            <url>https://packages.confluent.io/maven/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
             <version>3.1.0</version>
         </dependency>
+
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.confluent/common-utils &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>io.confluent</groupId>-->
+<!--            <artifactId>common-utils</artifactId>-->
+<!--            <version>7.1.1</version>-->
+<!--        </dependency>-->
 
         <!--Override for vulnerability-->
         <dependency>
@@ -67,7 +86,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>org.rrajesh1979.StreamsStarterApp</mainClass>
+                            <mainClass>org.rrajesh1979.FavouriteColourApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
